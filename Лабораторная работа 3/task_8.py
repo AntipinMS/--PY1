@@ -4,12 +4,12 @@ spend = 6000
 increase = 0.05
 
 
-def how_many_months(capital, sal, sp, incr=increase):
+def how_many_months(capital, salary, spend, incr=increase):
     count = 0
-    summ = capital + sal
+    summ = capital + salary
     while summ > 0:
-        summ -= sp
-        sp *= (1 + incr)
+        summ -= spend
+        spend *= (1 + incr)
         count += 1
     return count
 

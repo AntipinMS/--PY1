@@ -4,12 +4,11 @@ months = 10  # количество месяцев
 increase = 0.03  # рост цен
 
 
-def how_much_money(sal, sp, mon=months, incr=increase):
-    money = 0
-    money -= 10 * sal
-    for i in range(mon):
-        money += sp
-        sp *= (1 + incr)
+def how_much_money(salary, spend, month=months, increase_def=increase):
+    money = -10 * salary
+    for i in range(month):
+        money += spend
+        spend *= (1 + increase_def)
     return money
 
 

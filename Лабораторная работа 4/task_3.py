@@ -1,7 +1,6 @@
 def delete(list_, index=-1):
-    a = list_
-    a.pop(index)  # TODO реализовать функцию удаления элемента из списка по индексу
-    return a
+    list_.pop(index)  # TODO реализовать функцию удаления элемента из списка по индексу
+    return list_
 
 
 print(delete([0, 0, 1, 2], index=0))  # [0, 1]

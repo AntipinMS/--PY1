@@ -9,8 +9,8 @@ def get_count_char(str_):
 
 def frequency(dict_):
     symbols = sum(dict_.values())
-    for value in dict_.values():
-        value = value / symbols * 100
+    for key in dict_.keys():
+        dict_[key] *= 100 / symbols 
     return dict_
 
 
